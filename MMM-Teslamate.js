@@ -300,7 +300,7 @@ Module.register("MMM-Teslamate", {
     var idealRangeLi = document.createElement("li");
     idealRangeLi.className = "mattribute";
     idealRangeLi.appendChild(makeSpan("icon zmdi zmdi-swap-alt zmdi-hc-fw", ""));
-    idealRangeLi.appendChild(makeSpan("name", "Odometer"));
+    idealRangeLi.appendChild(makeSpan("name", "Est. Range"));
     idealRangeLi.appendChild(makeSpan("value", idealRange + (!this.config.imperial ? " Km" : " Mi")));
 
     attrList.appendChild(idealRangeLi);
