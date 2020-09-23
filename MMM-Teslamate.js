@@ -297,13 +297,13 @@ Module.register("MMM-Teslamate", {
       attrList.appendChild(chargeStartLi);
     }
 
-    var odometerLi = document.createElement("li");
-    odometerLi.className = "mattribute";
-    odometerLi.appendChild(makeSpan("icon zmdi zmdi-dot-circle-alt zmdi-hc-fw", ""));
-    odometerLi.appendChild(makeSpan("name", "Odometer"));
-    odometerLi.appendChild(makeSpan("value", odometer + (!this.config.imperial ? " Km" : " Mi")));
+    var idealRangeLi = document.createElement("li");
+    idealRangeLi.className = "mattribute";
+    idealRangeLi.appendChild(makeSpan("icon zmdi zmdi-swap-alt zmdi-hc-fw", ""));
+    idealRangeLi.appendChild(makeSpan("name", "Odometer"));
+    idealRangeLi.appendChild(makeSpan("value", idealRange + (!this.config.imperial ? " Km" : " Mi")));
 
-    attrList.appendChild(odometerLi);
+    attrList.appendChild(idealRangeLi);
     wrapper.appendChild(attrList);
   },
 
